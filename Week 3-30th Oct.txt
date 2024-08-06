@@ -16,6 +16,8 @@ Java source code (.java) is compiled by the Java compiler into bytecode (.class 
 The JVM loads the .class files and verifies the bytecode to ensure it's valid.
 The JVM's interpreter or Just-In-Time (JIT) compiler converts the bytecode into native machine code.
 The machine code is executed by the CPU, and the program runs.
+
+
 4. What is the use of var args?
 
 varargs (variable-length arguments) in Java allows a method to accept zero or more arguments of a specified type. This is useful when the number of arguments is not fixed.
