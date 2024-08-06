@@ -1,0 +1,51 @@
+1. What is the difference between JVM, JRE, and JDK?
+
+JVM (Java Virtual Machine): A virtual machine that runs Java bytecode. It provides the runtime environment for Java applications and is platform-dependent.
+
+JRE (Java Runtime Environment): Includes the JVM along with libraries and other components to run Java applications. It does not include development tools like compilers.
+
+JDK (Java Development Kit): A complete development environment that includes JRE, JVM, and tools for developing, debugging, and monitoring Java applications.
+
+2. How is Java a machine and platform-independent programming language?
+
+Java is platform-independent because its code is compiled into bytecode by the Java compiler, which is not specific to any machine's architecture. This bytecode is then interpreted and executed by the JVM, which is platform-dependent. Since JVM implementations exist for various platforms, Java can run on any platform that has a compatible JVM, making it platform-independent.
+
+3. Explain how Java programs are executed by the JVM.
+
+Java source code (.java) is compiled by the Java compiler into bytecode (.class files).
+The JVM loads the .class files and verifies the bytecode to ensure it's valid.
+The JVM's interpreter or Just-In-Time (JIT) compiler converts the bytecode into native machine code.
+The machine code is executed by the CPU, and the program runs.
+4. What is the use of var args?
+
+varargs (variable-length arguments) in Java allows a method to accept zero or more arguments of a specified type. This is useful when the number of arguments is not fixed.
+
+Example:
+
+java
+Copy code
+public void displayNumbers(int... numbers) {
+    for (int num : numbers) {
+        System.out.println(num);
+    }
+}
+5. What are the types of variables in Java?
+
+There are three types of variables in Java:
+
+Local Variables: Declared inside methods, constructors, or blocks and are only accessible within them.
+Instance Variables: Declared within a class but outside any method. They are specific to an instance of a class.
+Static Variables: Declared with the static keyword inside a class but outside any method. They belong to the class rather than any object instance.
+6. How many types of memory areas are allocated by JVM?
+
+The JVM allocates the following types of memory areas:
+
+Method Area: Stores class structures like metadata, constant runtime pool, and method code.
+Heap: Stores objects and instance variables.
+Stack: Stores local variables, method call details, and partial results.
+Program Counter (PC) Register: Keeps track of the JVM instruction currently being executed.
+Native Method Stack: Stores information about native method calls.
+7. What is Just-In-Time Compiler (JIT)?
+
+The JIT compiler is a part of the JVM that optimizes performance by compiling bytecode into native machine code at runtime,
+ rather than interpreting it. This allows frequently executed code to run much fast
