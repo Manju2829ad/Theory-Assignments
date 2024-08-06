@@ -1,0 +1,90 @@
+1. Primitive data types are the most basic data types available in Java. They are not objects and represent single values rather than collections of values. These types are predefined by the language and named by a reserved keyword
+Types of Primitive Data Types:
+
+byte
+
+Size: 8-bit
+Range: -128 to 127
+Default Value: 0
+Use: Useful for saving memory in large arrays where the memory savings are most needed.
+short
+
+Size: 16-bit
+Range: -32,768 to 32,767
+Default Value: 0
+Use: Similar to byte, but with a larger range.
+int
+
+Size: 32-bit
+Range: -2^31 to 2^31 - 1 (approximately -2.14 billion to 2.14 billion)
+Default Value: 0
+Use: Default choice for integer values unless there is a reason to use another type.
+long
+
+Size: 64-bit
+Range: -2^63 to 2^63 - 1
+Default Value: 0L
+Use: When a wider range than int is needed.
+float
+
+Size: 32-bit
+Range: Varies, with about 7 decimal digits of precision
+Default Value: 0.0f
+Use: Used when memory savings are important and the precision of a double is not required.
+double
+
+Size: 64-bit
+Range: Varies, with about 15 decimal digits of precision
+Default Value: 0.0d
+Use: Default choice for decimal values, generally the most appropriate type for floating-point calculations.
+char
+
+Size: 16-bit
+Range: 0 to 65,535 (unsigned)
+Default Value: '\u0000' (null character)
+Use: Used to store characters, each representing a single 16-bit Unicode character.
+boolean
+
+Size: Not precisely defined; can be thought of as 1-bit
+Values: true or false
+Default Value: false
+Use: Used for simple flags that track true/false conditions.
+
+
+2. Identifiers in Java are the names given to various program elements such as variables, methods, classes, packages, and interfaces. These names are used to uniquely identify the elements in the code.
+
+
+3.A final class in Java is a class that cannot be subclassed or extended. When you declare a class as final, you are preventing other classes from inheriting from it. This is useful when you want to ensure that the implementation of the class is complete and should not be altered by subclassing.
+
+4.  1. You can make a class final by declaring it with the final keyword. Once a class is declared final, it cannot be subclassed.
+    2.By making the constructor private 
+	
+	
+	
+5.Yes, we can create an instance of a final class in another class. The final keyword in Java means that the class cannot be subclassed, but it does not prevent us from creating instances of that class.
+
+6. Volatile is a declaration that a variable can be accessed by multiple threads and hence shouldn't be
+cached
+
+7.Transient field is used to indicate a field that it cannot be serialized
+
+8.There are two types of casting
+Primitive type: When the data is casted from one primitive type ( like int, float, double etc...  to another
+primitive type, then it is called primitive type
+ Derived casting: When the data is casted from one derived type to another derived type, then it is called
+derived casting
+
+
+9.Ans: Wrapping of primitive content into corresponding Urapper class object is called boxing. Unwrapping the
+Wrapper class object into corresponding primitive content is called unboxing
+
+
+10.Ans: Keyword’s are the reserved Words that have a pre defined meaning for the compiler and hence are
+restricted to be used as identifiers.
+
+Identifiers are the name assigned to different programming constructs like classes, interfaces, methods ,
+variables etc.
+Literals are the values that are assigned to Identifiers.
+
+int count = 0;
+in the above statement "int" is a keyUord, "count" is an identifier and "0" is a literal
